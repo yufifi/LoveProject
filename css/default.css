@@ -123,29 +123,6 @@
   margin: 20px;
 }
 
-@font-face {
-    font-family: digit;
-    src: url('../assets/Exo2-Light.ttf') format("truetype");
-}
-
-/* Estilo base */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-}
-
-#mainDiv {
-    text-align: center;
-    margin-top: 50px;
-}
-
-.heart-icon {
-    font-size: 50px;
-    cursor: pointer;
-    color: red;
-}
-
 /* Estilos para o carrossel */
 .carousel-modal {
     position: fixed;
