@@ -134,3 +134,21 @@ function adjustCodePosition() {
 function showLoveU() {
 	$('#loveu').fadeIn(3000);
 }
+
+// Funções de controle do carrossel
+function openCarousel() {
+    document.getElementById("carousel-modal").style.display = "flex";
+}
+
+function closeCarousel() {
+    document.getElementById("carousel-modal").style.display = "none";
+}
+
+let currentSlide = 0;
+
+function moveSlide(direction) {
+    const images = document.querySelectorAll(".carousel img");
+    images[currentSlide].classList.remove("active");
+    currentSlide = (currentSlide + direction + images.length) % images.length;
+    images[currentSlide].classList.add("active");
+}

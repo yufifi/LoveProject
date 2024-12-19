@@ -51,7 +51,7 @@
 			Se você sente minha falta toque no coração abaixo<br />
 			<br>
 			<span id="heartspan">
-			<a href="assets/image.jpg" target="_blank"><i class="fas fa-heart" id="icon"></i></a>
+        	<div class="heart-icon" onclick="openCarousel()">❤️</div>
 			</span>
 		</div>
 		<div id="loveHeart">
@@ -68,6 +68,20 @@
 			</div>
 		</div>
 	</div>
+</div>
+
+<!-- Carrossel de Imagens -->
+<div id="carousel-modal" class="carousel-modal" style="display: none;">
+    <div class="carousel-container">
+        <div class="carousel">
+            <img src="assets/image.jpg" alt="Imagem 1" class="active">
+            <img src="assets/image.jpg" alt="Imagem 2">
+            <img src="assets/image.jpg" alt="Imagem 3">
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        <button class="close-carousel" onclick="closeCarousel()">✖</button>
+    </div>
 </div>
 
 <script type="text/javascript">
